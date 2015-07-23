@@ -37,6 +37,9 @@
 	</div>
 </div><!-- #page -->
 
+<div id="cookie-law-info-bar"><span>Al usar este sitio acepta el uso de cookies para análisis, contenido personalizado y publicidad. <a href="#" id="cookie_action_close_header" class="medium cli-plugin-button cli-plugin-main-button">Aceptar</a> <a href="/politica-de-cookies/" id="CONSTANT_OPEN_URL" class="cli-plugin-main-link">Saber más</a></span></div>
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <?php wp_footer(); ?>
 
 </body>
