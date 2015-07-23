@@ -214,7 +214,7 @@ function sparkling_scripts() {
   wp_enqueue_style('sparkling-icons', '//netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.css', array(), null);
 
   // Add Google Fonts
-  wp_register_style('sparkling-fonts', '//fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,700|Roboto+Slab:400,300,700', array(), null));
+  wp_register_style('sparkling-fonts', '//fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,700|Roboto+Slab:400,300,700', array(), null);
 
   wp_enqueue_style( 'sparkling-fonts' );
 
