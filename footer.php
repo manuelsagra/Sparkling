@@ -38,9 +38,14 @@
 </div><!-- #page -->
 
 <div id="cookie-law-info-bar"><span>Al usar este sitio acepta el uso de cookies para análisis, contenido personalizado y publicidad. <a href="#" id="cookie_action_close_header" class="medium cli-plugin-button cli-plugin-main-button">Aceptar</a> <a href="/politica-de-cookies/" id="CONSTANT_OPEN_URL" class="cli-plugin-main-link">Saber más</a></span></div>
-<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <?php wp_footer(); ?>
-
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-356132-14', 'auto');
+  ga('send', 'pageview');
+</script>
 </body>
 </html>
