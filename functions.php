@@ -208,39 +208,39 @@ add_filter( 'gallery_style', 'sparkling_remove_gallery_css' );
 function sparkling_scripts() {
 
   // Add Bootstrap default CSS
-  wp_enqueue_style( 'sparkling-bootstrap', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css' );
+  wp_enqueue_style('sparkling-bootstrap', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css', array(), null);
 
   // Add Font Awesome stylesheet
-  wp_enqueue_style( 'sparkling-icons', '//netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.css' );
+  wp_enqueue_style('sparkling-icons', '//netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.css', array(), null);
 
   // Add Google Fonts
-  wp_register_style( 'sparkling-fonts', '//fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,700|Roboto+Slab:400,300,700');
+  wp_register_style('sparkling-fonts', '//fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,700|Roboto+Slab:400,300,700', array(), null));
 
   wp_enqueue_style( 'sparkling-fonts' );
 
   // Add slider CSS only if is front page ans slider is enabled
   if( ( is_home() || is_front_page() ) && of_get_option('sparkling_slider_checkbox') == 1 ) {
-    wp_enqueue_style( 'flexslider-css', get_template_directory_uri().'/inc/css/flexslider.css' );
+    wp_enqueue_style( 'flexslider-css', get_template_directory_uri().'/inc/css/flexslider.css', array(), null);
   }
 
   // Add main theme stylesheet
-  wp_enqueue_style( 'sparkling-style', get_stylesheet_uri() );
+  wp_enqueue_style( 'sparkling-style', get_stylesheet_uri(), array(), null);
 
   // Add Modernizr for better HTML5 and CSS3 support
-  wp_enqueue_script('sparkling-modernizr', get_template_directory_uri().'/inc/js/modernizr.min.js');
+  wp_enqueue_script('sparkling-modernizr', get_template_directory_uri().'/inc/js/modernizr.min.js', array(), null);
 
   // Add Bootstrap default JS
-  wp_enqueue_script('sparkling-bootstrapjs', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js', array(), false, true);
+  wp_enqueue_script('sparkling-bootstrapjs', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js', array(), null, true);
 
   if( ( is_home() || is_front_page() ) && of_get_option('sparkling_slider_checkbox') == 1 ) {
     // Add slider JS only if is front page ans slider is enabled
-    wp_enqueue_script( 'flexslider-js', get_template_directory_uri() . '/inc/js/flexslider.min.js', array(), '20140222', true);
+    wp_enqueue_script( 'flexslider-js', get_template_directory_uri() . '/inc/js/flexslider.min.js', array(), null, true);
     // Flexslider customization
-    wp_enqueue_script( 'flexslider-customization', get_template_directory_uri() . '/inc/js/flexslider-custom.js', array('flexslider-js'), '20140716', true);
+    wp_enqueue_script( 'flexslider-customization', get_template_directory_uri() . '/inc/js/flexslider-custom.js', array('flexslider-js'), null, true);
   }
 
   // Main theme related functions
-  wp_enqueue_script( 'sparkling-functions', get_template_directory_uri() . '/inc/js/functions.min.js', array(), false, true);
+  wp_enqueue_script( 'sparkling-functions', get_template_directory_uri() . '/inc/js/functions.min.js', array(), null, true);
 
   // Treaded comments
   if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
